@@ -32,6 +32,7 @@ if ($responseJson === FALSE) {
 <head>
     <meta charset="UTF-8">
     <title>Clima actual - PHP + API + Docker + Kubernetes</title>
+    // Estilos básicos
     <style>
         body { font-family: Arial, sans-serif; margin: 20px; }
         .card { border: 1px solid #ccc; padding: 15px; border-radius: 8px; max-width: 400px; }
@@ -65,14 +66,14 @@ if ($responseJson === FALSE) {
     <?php elseif ($data && isset($data['current_weather'])): ?>
         <?php $current = $data['current_weather']; ?>
         <h2>Resultado</h2>
-        <ul>
+        <ul>// Mostrar datos del clima actual
             <li><strong>Temperatura:</strong> <?php echo $current['temperature']; ?> °C</li>
             <li><strong>Velocidad del viento:</strong> <?php echo $current['windspeed']; ?> km/h</li>
             <li><strong>Dirección del viento:</strong> <?php echo $current['winddirection']; ?>°</li>
             <li><strong>Hora de la lectura:</strong> <?php echo htmlspecialchars($current['time']); ?></li>
         </ul>
     <?php else: ?>
-        <p>No hay datos de clima disponibles.</p>
+        <p>No hay datos de clima disponibles.</p>// Mostrar datos del clima actual
     <?php endif; ?>
 </body>
 </html>
