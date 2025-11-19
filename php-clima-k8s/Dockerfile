@@ -10,3 +10,4 @@ RUN a2enmod rewrite
 
 # Exponer el puerto 80 (interno del contenedor)
 EXPOSE 80
+# Comando para iniciar Apache en primer plano

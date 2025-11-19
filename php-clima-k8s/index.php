@@ -38,7 +38,7 @@ if ($responseJson === FALSE) {
         .card { border: 1px solid #ccc; padding: 15px; border-radius: 8px; max-width: 400px; }
         label { display: block; margin-top: 10px; }
         input[type="text"] { width: 100%; padding: 5px; }
-        button { margin-top: 10px; padding: 8px 12px; }
+        button { margin-top: 10px; padding: 8px 12px; }// Estilos básicos
     </style>
 </head>
 <body>
